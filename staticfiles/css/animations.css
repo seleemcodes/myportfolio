@@ -1,0 +1,84 @@
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in to sections */
+section {
+    animation: fadeIn 1s ease-in-out both;
+}
+
+/* Smooth hover effects for links */
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--button-color);
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Button hover effect */
+.resume-btn {
+    transition: transform 0.2s ease-in-out;
+}
+
+.resume-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Cursor effect */
+html {
+    cursor: none;
+}
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent);
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+}
+
+/* Animated Background */
+body {
+    background: linear-gradient(135deg, #1E1E2E, #15152A, #10101D);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+a {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #FCA311;
+    transform: scale(1.05);  /* Slight pop effect */
+}

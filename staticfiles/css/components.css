@@ -1,0 +1,66 @@
+/* Buttons */
+.resume-btn {
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* Project Cards */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Custom Cursor */
+.cursor {
+    mix-blend-mode: difference;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10vw; /* More balanced spacing */
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(30,30,46,0.9); /* Slight transparency */
+    backdrop-filter: blur(5px); /* Smooth glass effect */
+    z-index: 1000;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    mix-blend-mode: difference;
+}

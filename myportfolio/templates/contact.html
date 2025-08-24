@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Seleem Cook</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animations.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1 class="logo">Seleem Cook</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>🤝 Let’s Connect</h2>
+        <p>Email: cookselim@gmail.com</p>
+        <p>phone number/ Whatsapp: +2348121331752</p>
+        <p>Location: Remote — Nigeria based, world ready.<p/>
+        <p>If you’re ready to work with a junior dev who’s serious about becoming dangerous with code — hit me up. I’ll reply faster than your last developer did. 😉</p>
+        <button class="resume-btn">Download Resume</button>
+    </section>
+
+
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <div class="cursor"></div>
+    <script src="{% static 'js/script.js' %}?v={{ timestamp }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@300;400&display=swap');
+
+/* Color variables */
+:root {
+    --primary-bg: #1E1E2E;
+    --accent: #00ADB5;
+    --text-color: #EEEEEE;
+    --button-color: #FCA311;
+    --button-hover: #E08E00;
+}
+
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--button-color);
+}
+
+/* Sections */
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.resume-btn {
+    background-color: var(--button-color);
+    color: var(--primary-bg);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+    background-color: var(--button-hover);
+}
+
+h1 {
+    font-size: 4rem;  /* Reduce a bit */
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 2.2rem; /* Make the tagline pop more */
+    font-weight: 600;
+}
+
+body {
+    background: radial-gradient(circle, rgba(30,30,46,0.8) 30%, rgba(10,10,20,1) 100%);
+}

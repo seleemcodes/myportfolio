@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Seleem Cook</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animations.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="logo">Seleem Cook</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'contact' %}">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            👋 Hi, I’m Seleem Cook — The Python Guy You Wish You Met Sooner
+
+I’m a self-taught Python & Django developer from Nigeria, blending solid backend logic with just enough frontend magic to make things look alive.
+
+When I’m not debugging that one stubborn bug at 2AM, you’ll find me exploring new tech, learning the craft behind beautiful code, or tinkering with projects that solve real problems.
+
+I love building clean, simple web apps that just work — no fluff, no nonsense. Right now, I’m sharpening my full-stack skills while aiming to break into a role where I can learn fast, ship real things, and grow with a team that wants more than just lines of code — they want solutions.
+
+If you’re looking for someone who’s hungry, curious, and willing to Google his way out of anything… you’re looking at him.
+
+Let’s build something worth bragging about.
+        </p>
+    </section>
+    <section class="hero glass">
+        <h2>Crafting Minimal & Interactive Experiences</h2>
+    </section>
+    
+
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <!-- Custom cursor element for interactive effects -->
+    <div class="cursor"></div>
+    <script src="{% static 'js/script.js' %}?v={{ timestamp }}"></script>
+</body>
+</html>
